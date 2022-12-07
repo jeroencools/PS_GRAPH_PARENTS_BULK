@@ -2,6 +2,8 @@ TODO:
 
     * één script van maken = ID ophalen + related contact updaten
     * termen "moeder" en "vader" uit script halen en werken met parent, relative, aide, doctor, guardian, child, other, unknownFutureValue
+    * GUI toevoegen zodat het vlotter te gebruiken is door bijvoorbeeld administratief personeel
+    
     * Zie: https://learn.microsoft.com/en-us/graph/api/relatedcontact-update?view=graph-rest-beta&tabs=http
     * Zie: https://learn.microsoft.com/en-us/graph/api/resources/relatedcontact?view=graph-rest-1.0
     * Connectie met Graph: zie: https://learn.microsoft.com/en-us/powershell/microsoftgraph/get-started?view=graph-powershell-1.0
