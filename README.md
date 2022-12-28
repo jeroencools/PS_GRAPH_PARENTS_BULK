@@ -1,35 +1,31 @@
-TODO:
+### to do:
+* parent, relative, aide, doctor, guardian, child, other, unknownFutureValue
 
-    * één script van maken = ID ophalen + related contact updaten
-    * termen "moeder" en "vader" uit script halen en werken met parent, relative, aide, doctor, guardian, child, other, unknownFutureValue
-    * GUI toevoegen zodat het vlotter te gebruiken is door bijvoorbeeld administratief personeel
-    
-    * Zie: https://learn.microsoft.com/en-us/graph/api/relatedcontact-update?view=graph-rest-beta&tabs=http
-    * Zie: https://learn.microsoft.com/en-us/graph/api/resources/relatedcontact?view=graph-rest-1.0
-    * Connectie met Graph: zie: https://learn.microsoft.com/en-us/powershell/microsoftgraph/get-started?view=graph-powershell-1.0
+### Working with:
+ * 1.19.0               Microsoft.Graph
 
-edu_ouders.ps1
+### Some extra information:
+* https://learn.microsoft.com/en-us/graph/api/relatedcontact-update?view=graph-rest-beta&tabs=http
+* https://learn.microsoft.com/en-us/graph/api/resources/relatedcontact?view=graph-rest-1.0
+* https://learn.microsoft.com/en-us/powershell/microsoftgraph/get-started?view=graph-powershell-1.0
 
-    Door het uitvoeren van dit script worden kan je de "related contact" van edu users updaten op basis van een .csv-bestand (data.csv)
-data.csv
 
-    8 headers: UPN,ID,moedernaam,gsmmoeder,moedermail,vadernaam,gsmvader,vadermail
-* UPN = de UPN van de edu user (leerling)
-* ID = ID van de edu user (zie script get_id.ps1)
-* moedernaam = naam van de moeder
-* gsmmoeder = telefoon van de moeder
-* moedermail = e-mail van de moeder
-* vadernaam = naam van de vader
-* gsmvader = telefoon van de vader
-* vadermail = e-mail van de vader
 
-get_id.ps1
 
-    Door het uitvoeren van dit script kan je de ID's opvragen van edu users op basis van een .csv (upn.csv) 
 
-upn.csv
+### edu_parents.ps1
 
-    1 header: UPN
+This script updates the "related contacts" based on the information from a csv-file (data.csv). 
+Default value for relationship = "parent" - choosing another relationship value is currently WIP
 
-* UPN = User Principal Name van de edu user (leerling)
+### data.csv
+UPN,rc1name,rc1phone,rc1mail,rc2name,rc2phone,rc2mail
+7  headers: UPN,rc1name,rc1phone,rc1mail,rc2name,rc2phone,rc2mail
 
+* UPN = UPN of user
+* rc1name = Display name for related contact 1
+* rc1phone = Phone number for related contact 1
+* rc1mail = mail for related contact 1
+* rc2name = Display name for related contact 2
+* rc2phone = Phone number for related contact 2
+* rc2mail = mail for related contact 2
