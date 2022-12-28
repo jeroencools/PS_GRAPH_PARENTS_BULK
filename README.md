@@ -20,7 +20,7 @@ This script updates the "related contacts" based on the information from a csv-f
 Default value for relationship = "parent" - choosing another relationship value is currently WIP
 
 ### data.csv
-UPN,rc1name,rc1phone,rc1mail,rc2name,rc2phone,rc2mail
+
 7  headers: UPN,rc1name,rc1phone,rc1mail,rc2name,rc2phone,rc2mail
 
 * UPN = UPN of user
