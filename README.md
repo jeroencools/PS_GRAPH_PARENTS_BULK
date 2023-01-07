@@ -1,7 +1,3 @@
-### to do:
-* Add function to choose relationship: parent, relative, aide, doctor, guardian, child, other, unknownFutureValue
-* Add GUI with function to update the related contact values of one user
-
 ### Working with:
  * 1.19.0               Microsoft.Graph
 
